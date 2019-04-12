@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                             public void accept(List<ImageItem> imageItems) throws Exception {
                                 Log.e("TAG","照片选择完成");
                                 recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
-                                recyclerView.getRecycledViewPool().setMaxRecycledViews(0,10);
+//                                recyclerView.getRecycledViewPool().setMaxRecycledViews(0,10);
                                 Log.e("TAG","recyclerview布局已设置");
                                 PictureAdapter pictureAdapter = new PictureAdapter(imageItems,mContext);
                                 Log.e("TAG","imageItems为:"+imageItems);
